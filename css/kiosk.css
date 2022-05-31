@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Noto+Sans+KR:wght@300&display=swap');
+body {width: 100%; height: 100%; padding: 0; margin: 0; font-family: 'Noto Sans KR', sans-serif; line-height: normal; line-height: normal;}
+a, span, button {text-shadow: none !important;}
+em {font-style: normal;}
+
+/* logo */
+.logo {color:#fff; font-family: 'Lalezar', cursive; font-weight: 300; letter-spacing: 1px;}
+
+/* home page */
+.homeBox .logo {font-size: 50px; letter-spacing: 0;}
+.homeBox {}
+.homeBox::before {background: url(../img/coffee.png) no-repeat center center; background-size: cover;}
+.home_contentClickBtn {width: 100%; height: 100%; position: absolute; left: 0; top: 0;}
+.homeBox .kiosk_container  {margin: -100px auto 0 !important;}
+.home_text {color:#fff; font-size: 18px;}
+
+
+/* order */
+.orderMain {background-color: #42190b; position: relative;}
+.takeout_btn::before {background: url(../img/takeout.jpg) no-repeat center center; background-size: cover;}
+.delivery_btn::before {background: url(../img/cafe.png) no-repeat center center; background-size: cover;}
+
+.order_content {height: calc(100% - 50px);}
+.order_content .tabsBox {padding: 0 0 50px !important;}
+.orderBox {}
+.orderBox .navbar {}
+.orderBox .navbar li a {padding: 10px 0; font-size: 14px; color: #5a3021;}
+.orderBox .tab_cont p a {color:#6e4030; text-decoration: none;}
+.orderBox .tab_cont p a:focus, .orderBox .tab_cont p a:active, .orderBox .tab_cont p a:hover {}
+.orderBox .tab_cont .thumb_img {width: 100%;}
+.menu-order {width: 100%; display: flex;}
+.menu-order > span {display: inline-block;}
+.menu-order > span.menuName {width: 60%; text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.menu-order > span.length {width: 10%;}
+.menu-order > span.price {width: 30%; display: flex; position: relative;}
+.price {text-align: right;}
+.price > em {font-style: normal;}
+
+
+.orderViewBox {margin: 30px;}
+
+
+
+/* common */
+.kiosk_contBox {position: relative;}
+.kiosk_contBox::before {position: absolute; content: ''; width: 100%; height: 100%; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.kiosk_container {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.container {width: 100%;}
+
+.kiosk_content {}
+.kiosk_content ul {background-color: inherit;}
+.kiosk_content ul > li {background-color: inherit !important; border: 0 !important;}
+.kiosk_content ul li button {position: relative; z-index: 0; color: #fff !important; height: 150px;}
+.kiosk_content ul li button::before {position: absolute; content: ''; width: 100%; height: 100%; left: 0; top: 0; background-size: cover; z-index: -2;}
+.kiosk_content ul li button:after {position: absolute; content: ''; width: 100%; height: 100%; left: 0; top: 0; background:rgba(0,0,0,0.6); z-index: -1;}
+.kiosk_content ul li button span {z-index: 0; font-size: 24px; font-weight: 500;}
+
+.tab_cont {margin: 20px 20px 0; display: inline-block; width: calc(100% - 40px);}
+.tab_cont p {display: inline-block; width: 100%; margin: 0 0 10px;}
+.tab_cont p:last-child {margin-bottom: 0;}
+.tab_cont p a {display: block; font-size: 16px;}
+.tab_cont p a span {display: block;}
+.tab_cont p a span + span {margin-top: 5px;}
+.thumb_img {}
+.thumb_img img {width: 100%;}
+
+
+/* footer */
+div[data-role="footer"] .ui-navbar li .ui-btn {height: 40px; line-height: 40px; padding: 0;}
+.ui-footer-fixed {padding-bottom: 0;}
+
+
+/* popup */
+.popup {visibility: hidden; position: fixed; left: 0; bottom: -100%; width: 100%; background: #fff; padding-bottom: 40px; box-shadow: 0px -3px 10px #b3a9a9; transition: all 1s ease-out 0.1s; border-radius: 16px 16px 0 0;}
+.popup.open {visibility: visible; bottom: 0; position: sticky; }
+.pop_header {display: block; padding: 10px 20px; overflow: hidden; position: relative;}
+.pop_header::before {position: absolute; content: ''; left: 20px; bottom: 0; width: calc(100% - 40px); height: 1px;background: #ddd;}
+.pop_header h3 {margin: 0;float: left;}
+.pop-close {float: right; width: 24px; height: 24px; text-indent: -9999px; position: relative;}
+.pop-close::after {position: absolute; content: ''; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 24px; height: 24px; background: url(../img/common/ico-close-48.svg) no-repeat; background-size: contain;}
+.pop_content {display: block; padding: 0 20px; min-height: 100px; max-height: 200px; overflow-y: auto;}
+.pop_orderList {}
+.pop_orderList ul {padding-inline-start: 20px;}
+.pop_orderList ul li {position: relative;}
+.pop_orderList ul li::before {position: absolute; content: ''; left: -20px; top: 50%; transform: translateY(-50%); width: 10px; height: 1px; background: #000;}
+.price {float: right;}
+.order-deleteBtn {display: inline-block; margin-left: 10px; text-indent: -9999px; text-decoration: none; position: absolute; right: 0; width: 24px; height: 24px;}
+.order-deleteBtn::after {position: absolute; content: ''; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 24px; height: 24px; background: url(../img/common/ico-circle-close-48.svg) no-repeat; background-size: contain;}
+
+
+
+
+
+
+
+/* header */
+.ui-bar-b, .ui-page-theme-b .ui-bar-inherit, html .ui-bar-b .ui-bar-inherit, html .ui-body-b .ui-bar-inherit, html body .ui-group-theme-b .ui-bar-inherit {background-color: #42190b; border-color: #42190b;}
+/* header button active */
+.ui-page-theme-b .ui-btn, html .ui-bar-b .ui-btn, html .ui-body-b .ui-btn, html body .ui-group-theme-b .ui-btn, html head + body .ui-btn.ui-btn-b, .ui-page-theme-b .ui-btn:visited, html .ui-bar-b .ui-btn:visited, html .ui-body-b .ui-btn:visited, html body .ui-group-theme-b .ui-btn:visited, html head + body .ui-btn.ui-btn-b:visited {background-color: #9f7d7d; border-color: #9f7d7d;}
+.ui-page-theme-b .ui-btn.ui-btn-active, html .ui-bar-b .ui-btn.ui-btn-active, html .ui-body-b .ui-btn.ui-btn-active, html body .ui-group-theme-b .ui-btn.ui-btn-active, html head + body .ui-btn.ui-btn-b.ui-btn-active, .ui-page-theme-b .ui-checkbox-on:after, html .ui-bar-b .ui-checkbox-on:after, html .ui-body-b .ui-checkbox-on:after, html body .ui-group-theme-b .ui-checkbox-on:after, .ui-btn.ui-checkbox-on.ui-btn-b:after, .ui-page-theme-b .ui-flipswitch-active, html .ui-bar-b .ui-flipswitch-active, html .ui-body-b .ui-flipswitch-active, html body .ui-group-theme-b .ui-flipswitch-active, html body .ui-flipswitch.ui-bar-b.ui-flipswitch-active, .ui-page-theme-b .ui-slider-track .ui-btn-active, html .ui-bar-b .ui-slider-track .ui-btn-active, html .ui-body-b .ui-slider-track .ui-btn-active, html body .ui-group-theme-b .ui-slider-track .ui-btn-active, html body div.ui-slider-track.ui-body-b .ui-btn-active {background-color: #9f7d7d; border-color: #9f7d7d;}
+
+
+/* button active */
+.ui-page-theme-a .ui-btn.ui-btn-active, html .ui-bar-a .ui-btn.ui-btn-active, html .ui-body-a .ui-btn.ui-btn-active, html body .ui-group-theme-a .ui-btn.ui-btn-active, html head + body .ui-btn.ui-btn-a.ui-btn-active, .ui-page-theme-a .ui-checkbox-on:after, html .ui-bar-a .ui-checkbox-on:after, html .ui-body-a .ui-checkbox-on:after, html body .ui-group-theme-a .ui-checkbox-on:after, .ui-btn.ui-checkbox-on.ui-btn-a:after, .ui-page-theme-a .ui-flipswitch-active, html .ui-bar-a .ui-flipswitch-active, html .ui-body-a .ui-flipswitch-active, html body .ui-group-theme-a .ui-flipswitch-active, html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active, .ui-page-theme-a .ui-slider-track .ui-btn-active, html .ui-bar-a .ui-slider-track .ui-btn-active, html .ui-body-a .ui-slider-track .ui-btn-active, html body .ui-group-theme-a .ui-slider-track .ui-btn-active, html body div.ui-slider-track.ui-body-a .ui-btn-active {background-color: #8f5946; border-color: #8f5946;}
+
+.ui-page-theme-a .ui-btn:focus, html .ui-bar-a .ui-btn:focus, html .ui-body-a .ui-btn:focus, html body .ui-group-theme-a .ui-btn:focus, html head + body .ui-btn.ui-btn-a:focus, .ui-page-theme-a .ui-focus, html .ui-bar-a .ui-focus, html .ui-body-a .ui-focus, html body .ui-group-theme-a .ui-focus, html head + body .ui-btn-a.ui-focus, html head + body .ui-body-a.ui-focus {-webkit-box-shadow: 0 0 12px #8f5946; -moz-box-shadow: 0 0 12px #8f5946; box-shadow: 0 0 12px #8f5946;}
+
+
+
+@media screen and (max-width: 359px){
+    .logo {font-size: 36px;}
+}
